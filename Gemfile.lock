@@ -2,12 +2,14 @@ PATH
   remote: .
   specs:
     rubypostal (0.1.0)
+      ffi
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     diff-lcs (1.5.1)
+    ffi (1.15.5)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
