@@ -4,6 +4,7 @@ require_relative './address_parser_options'
 require_relative './address_pareser_response'
 
 module Rubypostal
+  # includes c binding for the libpostal library using FFI
   module LibpostalWrapper
     extend FFI::Library
     ffi_lib 'postal'

@@ -8,7 +8,7 @@ module Rubypostal
   extend LibpostalWrapper
 
   def self.parse_address(address)
-    options = get_default_options
+    options = default_options
     response = parse_address_with_options(address, options)
     results = extract_results(response)
     destroy_response(response)
@@ -17,7 +17,7 @@ module Rubypostal
   end
 
   class << self
-    def self.get_default_options
+    def self.default_options
       libpostal_get_address_parser_default_options
     end
 
