@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'ffi'
 require_relative 'rubypostal/libpostal_wrapper'
 
@@ -16,9 +17,8 @@ module Rubypostal
   end
 
   class << self
-
     def self.get_default_options
-      libpostal_get_address_parser_default_options()
+      libpostal_get_address_parser_default_options
     end
 
     def self.parse_address_with_options(address, options)

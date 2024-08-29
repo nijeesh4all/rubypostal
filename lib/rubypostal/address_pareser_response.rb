@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Rubypostal
   # AddressParserResponse struct
   class AddressParserResponse < FFI::Struct

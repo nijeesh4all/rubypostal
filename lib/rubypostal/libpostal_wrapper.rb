@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './address_parser_options'
 require_relative './address_pareser_response'
 
