@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'ffi'
-require_relative 'rubypostal/libpostal_wrapper'
+require "ffi"
+require_relative "rubypostal/libpostal_wrapper"
 
 # The main module for the gem
 module Rubypostal
@@ -17,15 +17,15 @@ module Rubypostal
   end
 
   class << self
-    def self.default_options
+    def default_options
       libpostal_get_address_parser_default_options
     end
 
-    def self.parse_address_with_options(address, options)
+    def parse_address_with_options(address, options)
       libpostal_parse_address(address, options)
     end
 
-    def self.extract_results(response)
+    def extract_results(response)
       results = {}
       num_components = response[:num_components]
 
@@ -38,7 +38,7 @@ module Rubypostal
       results
     end
 
-    def self.destroy_response(response)
+    def destroy_response(response)
       libpostal_address_parser_response_destroy(response)
     end
   end
