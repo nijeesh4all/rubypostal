@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubypostal (0.1.0)
+    rubylibpostal (0.1.1)
       ffi
 
 GEM
@@ -92,7 +92,7 @@ PLATFORMS
 DEPENDENCIES
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubypostal!
+  rubylibpostal!
   standard (~> 1.3)
 
 BUNDLED WITH
