@@ -10,6 +10,8 @@ module Rubypostal
     extend FFI::Library
     ffi_lib "postal"
 
+    private
+
     # Setup and teardown functions
     attach_function :libpostal_setup, [], :bool
     attach_function :libpostal_setup_parser, [], :bool
@@ -27,6 +29,11 @@ module Rubypostal
     attach_function :libpostal_get_default_options, [], AdressNormalizeOptions.by_value
     attach_function :libpostal_expand_address, [:string, AdressNormalizeOptions.by_value, :pointer], :pointer
     attach_function :libpostal_expansion_array_destroy, [:pointer, :size_t], :void
+
+    private_class_method :libpostal_setup, :libpostal_setup_parser, :libpostal_teardown, :libpostal_teardown_parser,
+      :libpostal_setup_language_classifier, :libpostal_teardown_language_classifier, :libpostal_get_address_parser_default_options,
+      :libpostal_parse_address, :libpostal_address_parser_response_destroy, :libpostal_get_default_options, :libpostal_expand_address,
+      :libpostal_expansion_array_destroy
 
     @mutex = Mutex.new
 
