@@ -3,7 +3,7 @@
 require_relative "lib/rubypostal/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "rubypostal"
+  spec.name = "rubylibpostal"
   spec.version = Rubypostal::VERSION
   spec.authors = ["Nijeesh Joshy"]
   spec.email = ["nijeesh.k@rently.com"]
