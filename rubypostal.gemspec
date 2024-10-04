@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.homepage = "https://github.com/nijeesh4all/rubypostal"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 2.6.1"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
