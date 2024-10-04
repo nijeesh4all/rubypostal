@@ -36,10 +36,10 @@ $ gem install rubylibpostal
 To parse an address, simply call the `Rubypostal.parse_address` method:
 
 ```ruby
-require 'rubypostal'
+require 'rubylibpostal'
 
 address = "781 Franklin Ave Crown Heights Brooklyn NYC NY 11216 USA"
-parsed = rubylibpostal.parse_address(address)
+parsed = RubyPostal.parse_address(address)
 
 puts parsed
 # => {
@@ -61,7 +61,7 @@ To expand an address into its possible variations:
 require 'rubylibpostal'
 
 address = "781 Franklin Ave, Brooklyn, NYC"
-expanded = rubylibpostal.expand_address(address)
+expanded = RubyPostal.expand_address(address)
 
 puts expanded
 # => ["781 franklin avenue brooklyn new york city", "781 franklin avenue nyc"]
