@@ -86,6 +86,13 @@ To release a new version, update the version number in `lib/rubylibpostal/versio
 ```bash
 $ bundle exec rake release
 ```
+## TODO
+1. [x] Write wrapper for the `exapand_address` and `parse_address` lib methods
+2. [x] Clean up and push the rspec to upstream
+3. [ ] Add the ability override the default configuration c-struct
+  - [ ] Add override for `libpostal_get_address_parser_default_options`
+  - [ ] Add override for `libpostal_get_default_options`
+4. Fix the Github actions to autopublish the gem
 
 ## Contributing
 
